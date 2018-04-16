@@ -238,7 +238,7 @@
       <xsl:when test="not(contains(@href,'://')) and $height and $width">
         <draw:frame text:anchor-type="as-char" svg:y="-0.1in">  
           <xsl:if test="string(number($height)) != 'NaN'">
-            <xsl:attribute name="svg:width">
+            <xsl:attribute name="svg:height">
               <xsl:value-of select="$height"/>
               <xsl:text>in</xsl:text>
             </xsl:attribute>
@@ -275,7 +275,7 @@
       <xsl:when test="not(contains($imgsrc,'://')) and $height and $width">
         <draw:frame text:anchor-type="as-char" svg:y="-0.1in">
           <xsl:if test="string(number($height)) != 'NaN'">
-            <xsl:attribute name="svg:width">
+            <xsl:attribute name="svg:height">
               <xsl:value-of select="$height"/>
               <xsl:text>in</xsl:text>
             </xsl:attribute>
